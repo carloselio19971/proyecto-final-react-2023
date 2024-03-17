@@ -1,0 +1,18 @@
+.contenedor-info-atencion{
+    background-color: black;
+    line-height: 1;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+
+.titulo-descripcion{
+    padding-right: 40px;
+    border-right: 3px solid white;
+    margin-right: 50px;
+}

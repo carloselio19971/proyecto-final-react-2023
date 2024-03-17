@@ -1,0 +1,9 @@
+.header{
+position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff; /* Ajusta el color de fondo según sea necesario */
+  z-index: 1000; /* Ajusta el z-index para asegurarte de que esté por encima de otros elementos */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Opcional: añade una sombra para resaltar el menú */
+}

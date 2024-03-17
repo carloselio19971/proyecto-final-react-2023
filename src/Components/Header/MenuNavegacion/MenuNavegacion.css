@@ -1,0 +1,143 @@
+.contenedor-global-menu-navegacion{
+    background-color: white;
+}
+
+.contenedor-menu-navegacion{
+    display: grid;
+    grid-template-columns: 8fr 4fr;
+   
+}
+.contenedor-botones{
+    display: flex;
+    justify-content: center;
+}
+
+.pide-en-tiendas{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fbb905;
+    border-radius: 40px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    height: 100px;
+    padding-top: 20px;
+    font-size: 28px;
+    width: 320px;
+    color:#173083;
+    padding-left: 30px;
+    padding-right: 20px;
+    
+}
+
+.pide-en-tiendas p{
+    font-size: 20px;
+}
+
+.pide-en-tiendas span{
+    font-weight: bold;
+    color:#e10b19;
+}
+
+.icono-tiendas img {
+    height: 50px;
+    filter: invert(18%) sepia(78%) saturate(2410%) hue-rotate(218deg) brightness(72%) contrast(95%);
+    padding-right: 20px;
+}
+.carrito-compras{
+    background-color: #fbb905;
+    height: 100px;
+    width: 150px;
+    border-radius: 40px;
+    margin-top: 30px;
+    margin-left: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.carrito-compras img {
+    height: 60px;
+    filter: invert(18%) sepia(78%) saturate(2410%) hue-rotate(218deg) brightness(72%) contrast(95%);
+}
+
+.icono-carrito-contenedor {
+    position: relative;
+    display: inline-block; /* Asegura que el contenedor abarque solo el espacio necesario */
+  }
+
+
+.contador-carrito{
+    height: 30px;
+    width: 30px;
+    background-color: red;
+    border-radius: 15px;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -10px; /* Ajusta la posición vertical según sea necesario */
+    right: -10px;
+
+}
+
+.menu ul li  {
+    list-style: none;
+    text-decoration: none;
+}
+
+
+
+
+.listado-menu{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    font-size: 35px;
+    font-weight: bold;
+    color:#173083;
+}
+
+.enlace-menu{
+    display: flex;
+    margin-right: 50px;
+}
+
+.imagen-menu img {
+    width: 100px;
+    padding-right: 20px;
+}
+
+.enlace-menu a {
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.promociones{
+    filter: invert(26%) sepia(12%) saturate(5552%) hue-rotate(196deg) brightness(83%) contrast(109%);
+}
+
+.lista-promociones {
+    position: absolute;
+    background-color: white;
+    z-index: 1;
+    padding: 40px;
+    font-size: 40px;
+    border-radius: 20px;
+    color:#173083;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    left: 30% ;
+    top:90%;
+  }
+
+.linea-promociones{
+    margin-top:10px;
+}
+
+
+.lista-promociones li:hover{
+    background-color: #173083;
+    border-radius: 10px;
+    color:#fbb905;
+    
+
+}

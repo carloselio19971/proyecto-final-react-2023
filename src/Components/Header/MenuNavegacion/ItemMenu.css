@@ -1,0 +1,14 @@
+/* En MenuNavegacion.css */
+.lista-menu:not(.promociones):hover {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Aplica la sombra solo a los elementos que no son promociones cuando se pasa el mouse sobre ellos */
+}
+
+.lista-menu:not(.promociones):hover {
+  border-bottom: 6px solid red; /* Línea roja cuando se pasa el mouse sobre el elemento */
+}
+
+.enlace-normal {
+  text-decoration: none; /* Elimina el subrayado del enlace */
+  color: inherit; /* Utiliza el color de texto heredado */
+  cursor: pointer; /* Cambia el cursor a un puntero al pasar el ratón sobre el enlace */
+}

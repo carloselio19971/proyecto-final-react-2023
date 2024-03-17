@@ -1,0 +1,70 @@
+.contanier-siteHeader{
+    color:white;
+    background-color:  #173083;
+}
+
+.img-bembos{
+    width:150px;
+    margin-top: 20px;
+    background-size: cover; 
+
+}
+.contenedor-grid-side-header{
+    max-width: 80%;
+    margin:0 auto;
+    display: grid;
+    grid-template-columns: 8fr 4fr;
+}
+.icono-llamada{
+    width: 50px;
+    filter: invert(95%) sepia(5%) saturate(0%) hue-rotate(343deg) brightness(104%) contrast(103%);
+    margin: 20px;
+}
+.contenedor-delivery-ingresa-cuenta{
+    display: flex;
+}
+
+.delivery{
+    display: flex;
+}
+
+.texto-delivery{
+    margin-top: 20px;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.delivery-texto{
+    color:#fbb905;
+    font-weight: bold;
+   
+}
+
+.numero-delivery{
+    margin-top: 2px;
+    font-size: 25px;
+}
+
+.logo-ingresar img {
+    width: 40px;
+    margin-top: 20px;
+    filter: invert(78%) sepia(89%) saturate(4487%) hue-rotate(354deg) brightness(105%) contrast(97%);
+}
+
+.logo-ingresar{
+    margin-left: 20px;
+}
+
+.ingresa-cuenta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20px;
+}
+
+.texto-ingresar p{
+    font-size: 15px;
+    margin-top: 10px;
+    font-weight: bold;
+    margin-left: 10px;
+}
