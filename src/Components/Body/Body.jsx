@@ -9,7 +9,7 @@ export const Body = () => {
       <SlidePanel />
       <div className="ancho">
         <PromoHamburguesas />
-        <MenuHamburguesas />
+        {/* <MenuHamburguesas /> */}
       </div>
      
     </div>

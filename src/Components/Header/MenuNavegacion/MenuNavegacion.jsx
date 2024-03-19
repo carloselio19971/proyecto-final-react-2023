@@ -18,8 +18,17 @@ const menuItemsData = [
   { imagen: Beneficios, texto: 'BENEFICIOS' ,enlace: 'https://www.instagram.com/'}
 ];
 
-export const MenuNavegacion = () => {
 
+
+const promocionesList = [
+  {promocion:'Promociones Personales', enlace: 'https://www.youtube.com/'},
+  {promocion:'Promoción para 2',enlace: 'https://www.youtube.com/'},
+  {promocion:  'Promoción para Compartir',enlace: 'https://www.youtube.com/'},
+  {promocion:  'Cupones',enlace: 'https://www.youtube.com/'}
+];
+
+export const MenuNavegacion = () => {
+  
   const [showPromocionesList, setShowPromocionesList] = useState(false);
 
   const handleMouseEnter = () => {
@@ -29,13 +38,6 @@ export const MenuNavegacion = () => {
   const handleMouseLeave = () => {
     setShowPromocionesList(false);
   };
-
-  const promocionesList = [
-    'Promociones Personales',
-    'Promoción para 2',
-    'Promoción para Compartir',
-    'Cupones'
-  ];
 
   return (
     <div className='contenedor-global-menu-navegacion'>
@@ -57,9 +59,8 @@ export const MenuNavegacion = () => {
         </nav>
         {showPromocionesList && (
             <ul className='lista-promociones'  onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-              {promocionesList.map((promo, index) => (
-                <li key={index}>{promo} <hr className='linea-promociones'></hr></li>
-                
+              {promocionesList.map(({promocion,enlace}, index) => (
+                <li key={index}><a href={enlace}>{promocion}</a> <hr className='linea-promociones'></hr></li>
               ))}
             </ul>
           )}

@@ -1,0 +1,19 @@
+.contendor-promociones{
+    text-align: center;
+    font-size: 30px;
+}
+
+.contendor-promociones h1{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.cards-promciones-hamburgesas{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:40px
+}
+
+.promo-content-name{
+    padding-top: 50px;
+}

@@ -1,14 +1,17 @@
+.cards-promciones-hamburgesas{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:40px
+}
+
 .swiper-slide {
     background-color: black;
     display: grid;
-    grid-template-columns: 3fr 3fr 3fr 3fr;
     line-height: 1;
 }
 
 
 .top-content {
-    display: flex;
-    justify-content: space-between;
     text-align: center;
 }
 

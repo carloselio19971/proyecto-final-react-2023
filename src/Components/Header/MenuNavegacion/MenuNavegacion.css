@@ -131,13 +131,19 @@
 
 .linea-promociones{
     margin-top:10px;
+    list-style: none;
 }
-
+.lista-promociones li a {
+    text-decoration: none;
+    color:black;
+}
 
 .lista-promociones li:hover{
     background-color: #173083;
     border-radius: 10px;
-    color:#fbb905;
-    
+    color:#fbb905 
+}
 
+.lista-promociones li a:hover{
+    color:#fbb905 
 }
