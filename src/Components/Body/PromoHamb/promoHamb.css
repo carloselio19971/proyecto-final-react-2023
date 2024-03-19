@@ -1,13 +1,10 @@
 .cards-promciones-hamburgesas{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
+    display: flex;
+    
     gap: 40px;
    
 }
 
-.promo-hamburgersas-contenedor-principal{
-   
-}
 
 
 .swiper-slide {
