@@ -1,8 +1,14 @@
 .cards-promciones-hamburgesas{
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    gap:40px
+    gap: 40px;
+   
 }
+
+.promo-hamburgersas-contenedor-principal{
+   
+}
+
 
 .swiper-slide {
     background-color: black;
@@ -145,4 +151,11 @@
 
 button{
     background-color: #193694 !important;
+}
+
+.contendor-promociones h1{
+    padding-top: 50px;
+    font-size: 50px;
+    text-align: center;
+    padding-bottom: 50px;
 }

@@ -21,15 +21,18 @@ export  const PromoHamburguesas  = () => {
   }, []); 
 
   return (
-      <section className="ancho contendor-promociones">
-        <h1>PROMOCIONES DE HAMBURGUESAS ONLINE</h1>
-        <section className='cards-promciones-hamburgesas'>
+    <div className='promo-hamburgersas-contenedor-principal'>
+       <section className="ancho contendor-promociones">
+            <h1>PROMOCIONES DE HAMBURGUESAS ONLINE</h1>
+           <section className='cards-promciones-hamburgesas'>
           {promociones.map((itemdata)=>
           <Tarjeta key={itemdata.id} item={itemdata}
           />      
         )}
          </section>
       </section>
+    </div>
+     
     
    
   )

@@ -4,15 +4,18 @@
 }
 
 .tarjeta{
-    box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.5); 
-}
-
-
-
-.div-promotion-img{
+   
    
 }
+
+
+.content-promotion-card{
+    background-color: white;
+    box-shadow: 0px 0px 10px 5px rgb(245, 238, 238); 
+}
+
 
 .div-promotion-img img {
     border-radius: 20px;
 }
+

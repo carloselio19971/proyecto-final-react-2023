@@ -7,7 +7,7 @@ export const Body = () => {
   return (
     <div>
       <SlidePanel />
-      <div className="ancho">
+      <div>
         <PromoHamburguesas />
         {/* <MenuHamburguesas /> */}
       </div>
