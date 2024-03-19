@@ -2,13 +2,14 @@ import  Axios  from 'axios';
 import '../PromoHamb/promoHamb.css'
 import { useEffect ,useState } from 'react';
 import {Tarjeta} from '../MenuHamb/Tarjeta';
+import { Paginacion } from './Paginacion';
+
 
 export  const PromoHamburguesas  = () => {
   const [promociones, setPromociones] = useState([]);
-  const [avanzar, setAvanzar]= useState(1);
-  const [total, setTotal]=useState([]);
-  const [retroceder,setRetroceder]= useState(1);
-
+  const [cantidadPromociones,setcantidadPromociones]=useState(5);
+  const [currentPage,setCurrentPage]=useState(1);
+ 
   useEffect(() => {
     const promocionesOnline = 'http://localhost:3000/promociones_online';
     const getPromocionesOnline = async () => {
@@ -16,8 +17,7 @@ export  const PromoHamburguesas  = () => {
         const response = await Axios.get(promocionesOnline);
         console.log(response.data);
         setPromociones(response.data);
-        setTotal(promociones.length)
-        console.log(total);
+
       } catch (error) {
         console.error('Error al obtener las promociones en línea:', error);
       }
@@ -25,46 +25,26 @@ export  const PromoHamburguesas  = () => {
     getPromocionesOnline();
   }, []); 
 
-  const handleAvanzar = (e) => {
-      e.preventDefault();
-    if(avanzar<total-3){
-      const valorIniciaAvanzar=avanzar+1;
-      const totalMostra=valorIniciaAvanzar+4;
-      const variableavanzar= promociones.slice(valorIniciaAvanzar, totalMostra);
-      console.log(variableavanzar);
-      setAvanzar(valorIniciaAvanzar);
-      setPromociones(variableavanzar);
-    }
-  };
-
-  const handleRetroceder = (e) => {
-    e.preventDefault();
-    if(avanzar>1){
-      const valorIniciaRetroceder=avanzar-1;
-      const totalMostra=valorIniciaRetroceder+4;
-      const variableReproceder=promociones.slice(valorIniciaRetroceder,totalMostra);
-      console.log(variableReproceder);
-      setRetroceder(valorIniciaRetroceder);
-      setPromociones(variableReproceder);
-    }
-
-    
-
-  };
-
+  //El inidice final es la pagina actual y la cantidad de paginas
+  const indexFinal=currentPage*cantidadPromociones;
+  const indexInicial=indexFinal-cantidadPromociones;
+  const nPromociones=promociones.slice(indexInicial,indexFinal);
+  const nPaginas=Math.ceil(promociones.length /cantidadPromociones);
+  console.log(nPaginas);
   return (
     <div className='promo-hamburgersas-contenedor-principal'>
       <section className="ancho contendor-promociones">
+        <div className='encabezadado-promo'>
         <h1>PROMOCIONES DE HAMBURGUESAS ONLINE</h1>
-        <section className='cards-promciones-hamburgesas'>
-          {promociones.map((itemdata) =>
+       
+        <Paginacion setCurrentPage={setCurrentPage} currentPage={currentPage} nPaginas={nPaginas} />
+        </div>
+            <section className='cards-promciones-hamburgesas'>
+          {nPromociones.map((itemdata) =>
             <Tarjeta key={itemdata.id} item={itemdata} />
-          ).slice(1,5)}
-          <button  onClick={(e) => handleRetroceder(e)}>Retroceder </button>
-          <button onClick={(e) => handleAvanzar(e)}>Avanzar</button>
+          )}
         </section>
-      
-      </section>
+        </section>
     </div>
   );
 }
