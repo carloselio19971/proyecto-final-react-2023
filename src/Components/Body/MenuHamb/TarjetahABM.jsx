@@ -4,7 +4,7 @@ export const Tarjeta = ({ item }) => {
   const { img, nombre, precio_actual, precio_antiguo } = item;
 
   return (
-    <div className="tarjeta-1 content-promotion-card">
+    <div className="tarjeta-1 content-promotion-card menu-hamburgesa">
       <div className="div-promotion-img">
         <img className="promotion-img" src={img} alt={nombre} />
       </div>

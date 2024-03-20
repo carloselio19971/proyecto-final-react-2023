@@ -38,7 +38,7 @@ export  const PromoHamburguesas  = () => {
         <h1>PROMOCIONES DE HAMBURGUESAS ONLINE</h1>
         <Paginacion setCurrentPage={setCurrentPage} currentPage={currentPage} nPaginas={nPaginas} />
         </div>
-            <section className='cards-promciones-hamburgesas'>
+          <section className='cards-promciones-hamburgesas'>
           {nPromociones.map((itemdata) =>
           <Tarjeta key={itemdata.id} item={itemdata}/>
           )}
