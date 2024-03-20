@@ -1,8 +1,8 @@
 import  Axios  from 'axios';
 import '../PromoHamb/promoHamb.css'
 import { useEffect ,useState } from 'react';
-import {Tarjeta} from '../MenuHamb/Tarjeta';
 import { Paginacion } from './Paginacion';
+import { Tarjeta } from './Tarjetas/Tarjeta';
 
 
 export  const PromoHamburguesas  = () => {
@@ -36,14 +36,17 @@ export  const PromoHamburguesas  = () => {
       <section className="ancho contendor-promociones">
         <div className='encabezadado-promo'>
         <h1>PROMOCIONES DE HAMBURGUESAS ONLINE</h1>
-       
         <Paginacion setCurrentPage={setCurrentPage} currentPage={currentPage} nPaginas={nPaginas} />
         </div>
             <section className='cards-promciones-hamburgesas'>
           {nPromociones.map((itemdata) =>
-            <Tarjeta key={itemdata.id} item={itemdata} />
+          <Tarjeta key={itemdata.id} item={itemdata}/>
           )}
         </section>
+        <div className='paginas-promocion'>
+        { <h3>{currentPage} / {nPaginas}</h3> }
+        </div>
+       
         </section>
     </div>
   );

@@ -1,3 +1,5 @@
+import '../MenuHamb/menuHamb.css'
+
 export const Tarjeta = ({ item }) => {
   const { img, nombre, precio_actual, precio_antiguo } = item;
 

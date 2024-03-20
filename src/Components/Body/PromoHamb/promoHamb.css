@@ -1,11 +1,8 @@
 .cards-promciones-hamburgesas{
     display: flex;
-    
     gap: 40px;
    
 }
-
-
 
 .swiper-slide {
     background-color: black;
@@ -155,4 +152,21 @@ button{
     font-size: 50px;
     text-align: center;
     padding-bottom: 50px;
+}
+
+.img-corazon{
+    width: 30px;
+    height: 30px;
+}
+
+.paginas-promocion{
+    margin-top: 20px;
+    background-color: #193694;
+    height: 30px;
+    width: 100px;
+    border-radius: 20px;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

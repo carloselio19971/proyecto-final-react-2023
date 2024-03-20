@@ -13,14 +13,16 @@ const prev = () =>{
 }
 
   return (
-    <div className='ancho cotenedor-botones-paginacion'>
-        {/* <h3>{currentPage} / {nPaginas}</h3> */}
+    <>
+      <div className='ancho cotenedor-botones-paginacion'>
+        
         <div className='boton-previo-next'>
-        <img className='flechas-promo' src={flechaIzquierda} onClick={next}/>
-        <img className='flechas-promo' src={flechaDerecha} onClick={prev}/>
+        <img className='flechas-promo' src={flechaIzquierda} onClick={prev}/>
+        <img className='flechas-promo' src={flechaDerecha} onClick={next}/>
         </div>
-       
     </div>
+    </>
+  
   )
 }
 

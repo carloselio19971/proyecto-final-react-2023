@@ -1,6 +1,7 @@
-import '../PromoHamb/Tarjeta.css'
+import corazon from '../../../../Imagenes/corazon.svg';
+
 export const Tarjeta = ({ item }) => {
-    const  { img, nombre, precio_actual, precio_antiguo } = item;
+    const  { img, nombre, precio_actual, precio_antiguo ,descuento } = item;
     
   return (
         <div className="tarjeta content-promotion-card">
@@ -13,13 +14,19 @@ export const Tarjeta = ({ item }) => {
             </a>
             <div className="div-content-price">
               <p className="real-price">
-              {precio_actual}
+                S/ {precio_actual}
               </p>
               <p className="promo-content-price">
-                {precio_antiguo}
+               S/ {precio_antiguo}
               </p>
             </div>
             <button type="button" className="promo-content-button">Ver más</button>
+          </div>
+          <div className="descuento">
+            <p>{descuento}</p>
+          </div>
+          <div className="corazon">
+            <img className='img-corazon' src={corazon}/>
           </div>
         </div>
   )

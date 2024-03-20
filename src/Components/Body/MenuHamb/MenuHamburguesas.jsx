@@ -1,7 +1,7 @@
 import  Axios  from 'axios';
 // import '../MenuHamb/menuHamb.css'
 import { useEffect ,useState } from 'react';
-import {Tarjeta} from './Tarjeta';
+import {Tarjeta} from './TarjetahABM';
 
 export  const MenuHamburguesas = () => {
   const [promociones, setPromociones] = useState([]);

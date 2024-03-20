@@ -91,6 +91,14 @@
     text-decoration: none;
 }
 
+.promo-content-name  h4{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+
+
 .promo-content-price {
     display: flex;
     justify-content: center;
@@ -110,7 +118,7 @@
 
 .real-price
 {  
-    font-weight: 700;
+    font-weight: bold;
     color: #030819;
     font-size: 27px;
     border-radius: 20px;
@@ -122,12 +130,12 @@
 .promo-content-price{
     position: relative;
     width: 47%;
-    font-size: 20px;
+    font-size: 18px;
     color: #ec0b0b;
     font-weight: 700;
     text-decoration: line-through;
     line-height: 1.8em;
-    margin: auto;
+    padding-bottom: 35px;
 }
 
 .promo-content-button {
@@ -148,4 +156,28 @@
 
 button{
     background-color: #193694 !important;
+}
+
+.descuento{
+    height: 36px;
+    width: 60px;
+    background-color: red;
+    border-radius: 12px;
+    color:white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 4%;
+    left: 10%;
+
+}
+
+
+.img-corazon{
+    position: absolute;
+    top: 4%;
+    right: 5%;
+    filter: invert(100%) sepia(15%) saturate(4417%) hue-rotate(185deg) brightness(110%) contrast(104%);
 }
